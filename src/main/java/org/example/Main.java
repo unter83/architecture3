@@ -30,18 +30,6 @@ public class Main {
 
 
     static class UsersHandler implements HttpHandler {
-
-        private String setName() {
-            Scanner sc = new Scanner(System.in);
-            String name = sc.nextLine();
-            return name;
-        }
-
-        private String setAuthor() {
-            Scanner sc = new Scanner(System.in);
-            String name = sc.nextLine();
-            return name;
-        }
         @Override
         public void handle(HttpExchange exchange) throws IOException {
             if ("GET".equals(exchange.getRequestMethod())) {
